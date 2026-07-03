@@ -246,12 +246,9 @@ export default function App() {
                       <h3 className="text-lg font-bold mb-2 text-teal-400 line-clamp-1">{project.title}</h3>
                       <p className="text-xs opacity-80 mb-4 line-clamp-2">{project.description}</p>
                       <div className="flex flex-wrap gap-1.5 mb-4">
-                        {project.technologies.slice(0, 3).map((tech) => (
+                        {project.technologies.map((tech) => (
                           <span key={tech} className="text-[10px] px-2 py-0.5 rounded bg-teal-500/10 text-teal-400 font-mono border border-teal-500/20">{tech}</span>
                         ))}
-                        {project.technologies.length > 3 && (
-                          <span className="text-[10px] px-1.5 py-0.5 opacity-50 font-mono">+{project.technologies.length - 3}</span>
-                        )}
                       </div>
                     </div>
                     <div className="flex gap-4 text-xs font-medium pt-2 border-t border-slate-800/20">

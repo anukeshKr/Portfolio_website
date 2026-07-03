@@ -3,6 +3,7 @@ import QuickBlog from "../assets/Quickblog2.png"
 import tomatoWeb from "../assets/tomato.png"
 import youtubeClone from "../assets/youtubeClone.png"
 import pokemonCard from "../assets/pokemonCard.png"
+import Quick_chat from "../assets/Quick_chat.png"
 
 export const personalInfo = {
     name: "Anukesh Kumar",
@@ -19,7 +20,7 @@ export const personalInfo = {
 export const skills = {
     Languages: ["JavaScript", "TypeScript", "SQL"],
     Frontend: ["React.js", "Next.js", "Tailwind CSS", "Bootstrap", "Material UI"],
-    Backend: ["Node.js", "Express.js", "REST APIs", "GraphQL"],
+    Backend: ["Node.js", "Express.js", "REST APIs", "GraphQL", "WebSocket", "Socket.io"],
     Databases: ["MongoDB", "MySQL", "PostgreSQL"],
     Tools: ["Git", "GitHub", "Docker", "Linux", "AWS"],
 };
@@ -40,6 +41,15 @@ export const experience = [
 export const projects = [
     {
         id: 1,
+        title: "Real-Time Full Stack Chat Application",
+        description: "Built a secure real-time messaging application featuring instant user-to-user chatting, multi-format image sharing, dynamic profile updates, and authentication flows.",
+        technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Socket.io", "Tailwind CSS", "JWT"],
+        liveLink: "https://quick-chat-42ub.vercel.app/",
+        codeLink: "https://github.com/anukeshKr/Quick_chat",
+        image: Quick_chat
+    },
+    {
+        id: 2,
         title: "AI-Powered Full Stack Blog Platform",
         description: "Built a full-stack blog platform with admin controls and Google Gemini API to generate AI content from titles.",
         technologies: ["MongoDB", "Express.js", "React.js", "Node.js", "Next.js", "Tailwind CSS", "Gemini API"],
@@ -48,7 +58,7 @@ export const projects = [
         image: QuickBlog
     },
     {
-        id: 2,
+        id: 3,
         title: "E-commerce Website",
         description: "Full-stack application featuring JWT authentication, cart workflows, and scalable backend APIs managing 100+ menu items.",
         technologies: ["MERN Stack", "Tailwind CSS", "JWT Authentication", "REST APIs", "Git"],
@@ -57,7 +67,7 @@ export const projects = [
         image: tomatoWeb
     },
     {
-        id: 3,
+        id: 4,
         title: "YouTube Clone",
         description: "A video streaming platform application designed with a responsive multi-column layout, featuring video playback, real-time comment feeds, and dynamic content delivery.",
         technologies: ["React.js", "Tailwind CSS", "Google API", "Axios", "Git"],
@@ -66,7 +76,7 @@ export const projects = [
         image: youtubeClone
     },
     {
-        id: 4,
+        id: 5,
         title: "Pokémon Card Explorer",
         description: "An interactive digital catalog featuring instant client-side search filtering, pagination, and detailed card metrics compiled from external trading card datasets.",
         technologies: ["React.js", "Tailwind CSS", "Pokémon TCG API", "REST APIs", "Git"],
